@@ -1,6 +1,6 @@
 {
   "name": "subindex",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Generic pluggable indexing system for leveldb/levelup. Designed to be used with the level-queryengine query engine.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eugeneware/subindex"
+    "url": "https://github.com/kphongph/subindex"
   },
   "keywords": [
     "leveldb",
@@ -26,7 +26,7 @@
     "queries",
     "mongodb"
   ],
-  "author": "Eugene Ware <eugene@noblesamurai.com>",
+  "author": "Phongphun Kijsanayothin <kphongph@gmail.com>",
   "license": "BSD",
   "devDependencies": {
     "chai": "^1.9.1",

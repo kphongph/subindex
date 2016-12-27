@@ -15,8 +15,9 @@ function decode(key) {
 }
 
 module.exports = levelIndex;
-function levelIndex(db) {
+function levelIndex(maindb) {
   db = sublevel(db);
+  db.main = maindb;
   hooks(db);
 
   if (!db.ensureIndex) {
@@ -146,7 +147,7 @@ function ensureIndex(db, idxName) {
     }, options);
   }
 
-  db.createReadStream()
+  db.main.createReadStream()
     .on('data', function write(dataToIndex) {
         addToIndex(dataToIndex, function (err) {
           if (count === 0 && ended) cb();
